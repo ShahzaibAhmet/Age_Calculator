@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#3c0496,#7297d1);
+    color: #fff;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+.calculator{
+    width: 100%;
+    min-height: 600px;
+    margin-left: 10%;
+    margin-top: 17%;
+    
+}
+h1{
+    margin-left: 5px;
+    font-size: 4em;
+    display: inline-block;
+    margin-right: 20px;
+    user-select: none;
+}
+#cal{
+    color: rgb(197, 128, 0);
+}
+.input{
+    background: rgba(255, 255, 255, 0.2);
+    width: 600px;
+    height: 120px;
+    display: flex;
+    margin: 20px 0;
+    padding: 35px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+
+}
+#inputbox{
+    flex: 1;
+    margin-right:20px ;
+    padding: 14px 20px;
+    outline: none;
+    border-radius: 5px;
+    border: 0;
+    font-size: 17px;
+    position: relative;
+}
+#inputbox:hover{
+    background: #dbdbdb;
+    transition: 0.3s;
+}
+.input button{
+    color: #333;
+    background-color:rgb(197, 128, 0);
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.1s;
+}
+.input button:active{
+    background: rgb(158, 103, 0);
+}
+
+.input #inputbox::-webkit-calendar-picker-indicator{
+    top: 19px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size:30px;
+    cursor: pointer;
+    
+}
+p{
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 5px;
+    /* margin-top: 20px; */
+    top: 20px;
+    position: relative;
+}
+p span{
+    color:rgb(197, 128, 0) ;
+    text-shadow: #333 2px 2px 20px ;
+}
